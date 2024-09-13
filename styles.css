@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  overflow: hidden;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 40px; /* Reduced padding */
+  background: rgba(0, 0, 100, 1);
+  border-radius: 20px; /* Reduced border-radius */
+  box-shadow: 0px 10px 20px rgba(0, 0, 150, 0.3); /* Reduced shadow size */
+  max-width: 700px; /* Reduced max-width */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px; /* Reduced space between text and images */
+}
+
+.text-content {
+  padding-bottom: 15px; /* Reduced space below the text */
+}
+
+h1 {
+  font-size: 2.8em; /* Reduced font size */
+  margin: 0;
+  color: #90caf9; /* Light blue color */
+  font-weight: bold;
+  letter-spacing: 2px; /* Reduced letter-spacing */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+p {
+  font-size: 1.4em; /* Reduced font size */
+  margin-top: 15px; /* Reduced margin */
+  color: #90caf9; /* Light blue color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.side-image {
+  width: 200px; /* Reduced image size for side images */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.center-image {
+  width: 200px; /* Reduced image size for the center image */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 0 15px; /* Reduced margin between the center and side images */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #90caf9, 0 0 20px #90caf9, 0 0 30px #90caf9;
+  }
+  to {
+    text-shadow: 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000;
+  }
+}
+
+/* Confetti Canvas */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the Date - Mitchell's 21st Birthday</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Text content -->
+      <div class="text-content">
+        <h1>Save the Date!</h1>
+        <p>
+          You have been invited to Mitchell's 21st birthday on the 23rd of
+          November!! More details to follow!
+        </p>
+      </div>
+
+      <!-- Images below the text -->
+      <div class="flex-container">
+        <img src="Left.jpg" alt="Left Image" class="side-image" />
+        <img src="Center.jpg" alt="Center Image" class="center-image" />
+        <img src="Right.jpg" alt="Right Image" class="side-image" />
+      </div>
+    </div>
+
+    <!-- JSConfetti Script -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script>
+      const jsConfetti = new JSConfetti();
+
+      // Function to trigger confetti
+      function launchConfetti() {
+        jsConfetti.addConfetti({
+          confettiColors: ["#ff4081", "#ffeb3b", "#00e676", "#40c4ff"],
+        });
+      }
+
+      // Trigger confetti every 3 seconds
+      setInterval(launchConfetti, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+
+    <!-- Fireworks Script -->
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/index.umd.js"></script>
+    <script>
+      const container = document.body;
+      const fireworks = new Fireworks(container, {
+        speed: 2,
+        acceleration: 1.05,
+        friction: 0.98,
+        gravity: 1.5,
+        particles: 200,
+        trace: 3,
+        explosion: 5,
+      });
+      fireworks.start();
+    </script>
+  </body>
+</html>
