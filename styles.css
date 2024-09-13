@@ -47,7 +47,7 @@ p {
 
 .side-image,
 .center-image {
-  max-width: 50px; /* Reduced max-width for images */
+  max-width: 150px; /* Reduced max-width for images */
   height: auto;
   margin: 3px; /* Reduced margin */
 }
