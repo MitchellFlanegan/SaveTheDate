@@ -13,9 +13,9 @@ body {
 .container {
   text-align: center;
   padding: 10px; /* Reduced padding */
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 100, 1);
   border-radius: 10px; /* Reduced border-radius */
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+  box-shadow: 0px 5px 10px rgba(0, 0, 150, 0.3); /* Reduced shadow */
   max-width: 70%; /* Further reduced width */
   margin: 0 auto;
 }
