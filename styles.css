@@ -47,13 +47,13 @@ p {
 
 .side-image,
 .center-image {
-  max-width: 80px; /* Reduced max-width for images */
+  max-width: 50px; /* Reduced max-width for images */
   height: auto;
   margin: 3px; /* Reduced margin */
 }
 
 .center-image {
-  max-width: 80px; /* Reduced max-width for the center image */
+  max-width: 50px; /* Reduced max-width for the center image */
 }
 
 /* Keyframes for glow effect */
