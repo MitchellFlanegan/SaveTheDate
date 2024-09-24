@@ -31,10 +31,11 @@ h1 {
 }
 
 p {
-  font-size: 0.9em; /* Further reduced size */
+  font-size: 1em; /* Further reduced size */
   margin-top: 5px; /* Reduced margin */
   color: #90caf9; /* Light blue color */
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Reduced text shadow */
+  font-weight: 600;
 }
 
 .images {
